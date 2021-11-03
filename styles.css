@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&family=Rubik:wght@300&family=Space+Mono&display=swap");
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --LightRedWork: hsl(15, 100%, 70%);
+  --SoftBlue: hsl(195, 74%, 62%);
+  --LightRedStudy: hsl(348, 100%, 68%);
+  --LimeGreen: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --SoftOrange: hsl(43, 84%, 65%);
+}
+
+.background {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(2, 7, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 55%;
+  max-width: 900px;
+  max-height: 700px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 50%;
+  padding: 10px;
+}
+
+.card {
+  background-color: green;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.top {
+  grid-row: 1/2;
+}
+
+.content {
+  width: 100%;
+  background-color: rgb(0, 0, 88);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.content .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-row: 1/2;
+  padding: 10px;
+}
+
+.content .header div {
+  font-size: 13px;
+  /* font-weight: 600; */
+}
+
+.content .header img {
+  width: 10%;
+}
+
+.hours {
+  font-size: 30px;
+  grid-row: 2/3;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.content .footer {
+  font-size: 13px;
+  /* font-weight: 600; */
+  grid-row: 3/4;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.menu {
+  background-color: rgb(0, 0, 88);
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.profile {
+  height: 70%;
+  width: 100%;
+  background-color: var(--Blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  background-image: url("./images/image-jeremy.png");
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.profile .report-for {
+  font-size: 10px;
+  /* font-weight: 500; */
+  padding: 15px;
+  padding-top: 0;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 200;
+  padding-left: 15px;
+}
+
+.btns-container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  color: var(--Blue);
+  cursor: pointer;
+  background-color: inherit;
+  text-align: left;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.select {
+  color: white;
+}
+
+#c1 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top right;
+  background-color: var(--LightRedWork);
+}
+#c2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top right;
+  background-color: var(--SoftBlue);
+}
+#c3 {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top right;
+  background-color: var(--LightRedStudy);
+}
+#c4 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top right;
+  background-color: var(--LimeGreen);
+}
+#c5 {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top right;
+  background-color: var(--Violet);
+}
+#c6 {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: top right;
+  background-color: var(--SoftOrange);
+}
